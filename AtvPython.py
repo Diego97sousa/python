@@ -116,6 +116,23 @@ print('A mediana da lista de temperaturas é: ', mediana, '°C')
 
 # In[ ]:
 
+calcula = sum(lista) / len(lista)
+varia = sum(i - calcula) **2
+     for i in lista) / len(lista)
+desvio = varia ** 0.5
+print("A variância das temperaturas é: " ,round(varia,2))
 
-alturas = np.array
+print('O desvio-padrão das temperaturas é: ' round(desvio,2))
+
+arquivo = open ('Relatório_de_temperaturas.txt', 'w')
+arquivo.write("Valores total das temperaturas: 5548 °C\N")
+arquivo.write("Médi das temperaturas: 22.64°C\N")
+arquivo.write("A mediana da lista de temperaturas é: 14.0°C\N")
+arquivo.write("A variância da lista é: 108.34°C\N")
+arquivo.write("O desvio-padrão da lista é: 10.41°C\N")
+
+arquivo.close()
+
+
+
 
